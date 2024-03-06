@@ -4,19 +4,20 @@ version '1.0'
 buildscript {
     repositories {
         google()
-        jcenter()
         mavenCentral()
+        jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.20"
+        classpath 'com.android.tools.build:gradle:7.2.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.20"
     }
 }
 
 rootProject.allprojects {
     repositories {
         google()
+        mavenCentral()
         jcenter()
     }
 }
@@ -34,6 +35,6 @@ android {
 
 
 dependencies {
-    implementation "com.tencent.tav:libpag:4.1.49"
+    implementation "com.tencent.tav:libpag:4.2.100"
     implementation 'com.jakewharton:disklrucache:2.0.2'
 }
